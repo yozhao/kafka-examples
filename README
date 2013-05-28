@@ -1,0 +1,6 @@
+This directory contains examples of client code that uses kafka.
+
+kafka.examples.KafkaConsumerProducerDemo which sends and receives messages from Kafka server.
+
+To run the demo using scripts: run bin/java-producer-consumer-demo.sh
+
