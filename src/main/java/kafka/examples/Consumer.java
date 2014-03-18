@@ -42,7 +42,7 @@ public class Consumer extends Thread {
   private static ConsumerConfig createConsumerConfig() {
     Properties props = new Properties();
     // zk connection
-    props.put("zk.connect", "lg-ml-test02.bj");
+    props.put("zk.connect", "localhost");
     // Same group id means consume message separately
     props.put("groupid", 0);
     // The zookeeper session timeout.

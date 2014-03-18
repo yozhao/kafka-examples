@@ -28,7 +28,7 @@ public class Producer extends Thread {
 
   public Producer(String topic) {
     props.put("serializer.class", "kafka.serializer.StringEncoder");
-    props.put("zk.connect", "lg-ml-test02.bj");
+    props.put("zk.connect", "localhost");
     // The message is of type String.
     producer = new kafka.javaapi.producer.Producer<Integer, String>(new ProducerConfig(props));
     this.topic = topic;
